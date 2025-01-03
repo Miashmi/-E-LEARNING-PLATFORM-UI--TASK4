@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Development</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="E-Learn Logo" />
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="progress.html">Progress</a></li>
+        <li><a href="video1.html">Videos</a></li>
+      </ul>
+    </nav>
+    <a href="login.html" class="login-btn">Login</a>
+  </header>
+
+  <!-- Course Description -->
+  <section class="course-description">
+    <h2>Data Structure</h2>
+    <p>
+        Dive deep into the world of data structures, learn how to optimize your algorithms, 
+        and enhance problem-solving skills for interviews and real-world projects.
+    </p>
+  </section>
+
+  <!-- Video Listings -->
+  <section class="video-listing">
+    <h3>Course Videos</h3>
+    <div class="video-container">
+      <div class="video-card">
+        <p>Understanding Arrays and Linked Lists</p>
+        <button onclick="playVideo('videos/python_intro.mp4')">Play</button>
+      </div>
+      <div class="video-card">
+        <p>Stacks and Queues in Depth</p>
+        <button onclick="playVideo('videos/python_data_types.mp4')">Play</button>
+      </div>
+      <div class="video-card">
+        <p>Binary Trees and Graphs</p>
+        <button onclick="playVideo('videos/python_loops.mp4')">Play</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function playVideo(videoUrl) {
+      // Open the video in a new tab for full-screen playback
+      const newWindow = window.open(videoUrl, '_blank');
+      newWindow.focus();
+    }
+  </script>
+</body>
+</html>
